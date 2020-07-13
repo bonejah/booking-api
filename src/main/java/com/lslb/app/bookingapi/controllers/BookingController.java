@@ -73,7 +73,7 @@ public class BookingController {
 	}
 
 	@PostMapping(value = "/booking", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Booking> saveBook(@Valid @RequestBody Booking book) {
+	public ResponseEntity<Booking> saveBooking(@Valid @RequestBody Booking book) {
 		checkDates(book);
 		
 		Booking bookingFounded = repository.findBookByNameEmailAndDate(book.getName(), book.getEmail(), 

@@ -26,7 +26,7 @@ public class BookingControlerTest {
 		int countSaved = 0;
 		
 		for (int i = 0; i < 10000; i++) {
-			controller.saveBook(booking);
+			controller.saveBooking(booking);
 			booking = new Booking("teste", "teste@gmail.com", LocalDateTime.now(), LocalDateTime.now());
 			countSaved++;
 		}
