@@ -49,7 +49,6 @@ public class BookingController {
 
 		return new ResponseEntity<List<Booking>>(pageResult, HttpStatus.OK);
 	}
-	
 
 	@GetMapping(value = "/booking/pageable", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<Booking>> getAllBookingsCurrentMonthPageable() {		
